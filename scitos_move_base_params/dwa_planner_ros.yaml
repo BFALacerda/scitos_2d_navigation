@@ -16,7 +16,7 @@ DWAPlannerROS:
   yaw_goal_tolerance: 0.1
   
   #default:0.1 -> with this value the robot sometimes has troubles achieving the goal, due to low tolerance
-  xy_goal_tolerance: 0.3
+  xy_goal_tolerance: 0.1
   
   
   # if the robot ever reaches the goal xy location it will simply rotate in place, even if it ends up outside the goal tolerance while it is doing so.
