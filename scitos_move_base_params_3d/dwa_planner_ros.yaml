@@ -16,7 +16,7 @@ DWAPlannerROS:
   yaw_goal_tolerance: 0.1
   
   #default:0.1 -> with this value the robot sometimes has troubles achieving the goal, due to low tolerance
-  xy_goal_tolerance: 0.3
+  xy_goal_tolerance: 0.1
   
   
   # if the robot ever reaches the goal xy location it will simply rotate in place, even if it ends up outside the goal tolerance while it is doing so.
@@ -27,8 +27,8 @@ DWAPlannerROS:
   
 
 #cost =  path_distance_bias * (distance to path from the endpoint of the trajectory in meters)  + goal_distance_bias * (distance to local goal from the endpoint of the trajectory in meters)  + occdist_scale * (maximum obstacle cost along the trajectory in obstacle cost (0-254))
-  path_distance_bias: 5.0 #default:32
-  goal_distance_bias: 9.0 #default:24
+  path_distance_bias: 32 #default:32
+  goal_distance_bias: 24 #default:24
   occdist_scale: 0.01 #default:0.01
 
   
